@@ -3,74 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guía de Estrategia Cyberpunk</title>
+<title>Guía de Estrategia Dashboard Cyberpunk</title>
 <style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap');
 
-/* Estilos Globales Futuristas */
-body {
-  background-color: #05050d;
-  color: #e0e6ed;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.main-container {
-  max-width: 800px;
-  width: 100%;
-  background: rgba(10, 12, 24, 0.95);
-  border: 1px solid #00f0ff;
-  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2), inset 0 0 15px rgba(0, 240, 255, 0.1);
-  border-radius: 8px;
-  padding: 40px;
+/* Estilos de Pantalla Completa sin Scroll Global */
+* {
   box-sizing: border-box;
 }
 
-/* Tipografía e Títulos Futuristas */
-h1, h2, h3 {
-  font-family: 'Orbitron', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+html, body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 15px;
+  background-color: #05050d;
+  color: #e0e6ed;
+  font-family: 'Rajdhani', sans-serif;
+  overflow: hidden; /* Elimina el scroll global de la página */
 }
 
-.section-header {
+/* Dashboard en Grid de 3 Columnas */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-rows: repeat(2, calc(50vh - 25px));
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Tarjeta / Contenedor por Región */
+.card {
+  background: rgba(10, 12, 24, 0.95);
+  border: 1px solid #00f0ff;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.15), inset 0 0 10px rgba(0, 240, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  overflow: hidden;
+}
+
+/* Título de la Tarjeta */
+.card-title {
   font-family: 'Orbitron', sans-serif;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 900;
   color: #ff0055;
-  text-decoration: underline;
-  text-shadow: 0 0 8px rgba(255, 0, 85, 0.6);
-  margin-top: 30px;
-  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 6px rgba(255, 0, 85, 0.6);
   border-bottom: 1px solid rgba(255, 0, 85, 0.3);
-  padding-bottom: 5px;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+  flex-shrink: 0;
+}
+
+/* Scroll Interno Suave dentro de cada Tarjeta */
+.card-body {
+  overflow-y: auto;
+  padding-right: 6px;
+  flex-grow: 1;
+}
+
+/* Estilo Personalizado de Scrollbar Futurist */
+.card-body::-webkit-scrollbar {
+  width: 4px;
+}
+.card-body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+.card-body::-webkit-scrollbar-thumb {
+  background: #00f0ff;
+  border-radius: 2px;
+  box-shadow: 0 0 4px #00f0ff;
+}
+
+/* Tipografía de la Guía */
+.section-header {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #00f0ff;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  border-bottom: 1px dashed rgba(0, 240, 255, 0.3);
 }
 
 .sub-header {
   font-family: 'Orbitron', sans-serif;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 700;
   color: #bf00ff;
-  text-shadow: 0 0 6px rgba(191, 0, 255, 0.5);
-  margin-top: 15px;
-  margin-bottom: 10px;
+  text-shadow: 0 0 4px rgba(191, 0, 255, 0.5);
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
-/* Estilos de Texto */
 p {
-  margin: 6px 0;
-  line-height: 1.4;
-  font-size: 17px;
+  margin: 3px 0;
+  line-height: 1.3;
+  font-size: 14px;
 }
 
 .highlight-pokemon {
   color: #ffffff;
   font-weight: 700;
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
 }
 
 .action-text {
@@ -82,196 +122,184 @@ p {
   font-weight: 600;
 }
 
-/* Listas e Indicadores Neón */
+/* Listas Compactas */
 ul {
   list-style-type: none;
-  padding-left: 20px;
-  margin: 8px 0;
+  padding-left: 14px;
+  margin: 4px 0;
 }
 
 li {
   position: relative;
-  margin-bottom: 6px;
-  font-size: 17px;
+  margin-bottom: 2px;
+  font-size: 14px;
 }
 
 li::before {
   content: "➢";
   position: absolute;
-  left: -18px;
+  left: -14px;
   color: #00f0ff;
-  text-shadow: 0 0 5px #00f0ff;
+  font-size: 11px;
 }
 
-/* Colores Específicos por Tipo/Condición */
-.c-starters { color: #ff007f; text-shadow: 0 0 5px #ff007f; }
-.c-yellow { color: #ffe600; text-shadow: 0 0 5px #ffe600; }
-.c-blue { color: #00a2ff; text-shadow: 0 0 5px #00a2ff; }
-.c-green { color: #00ff66; text-shadow: 0 0 5px #00ff66; }
-.c-orange { color: #ff6600; text-shadow: 0 0 5px #ff6600; }
-.c-purple { color: #b026ff; text-shadow: 0 0 5px #b026ff; }
-.c-cyan { color: #00f0ff; text-shadow: 0 0 5px #00f0ff; }
+/* Estilos de Color para Tipos/Condiciones */
+.c-starters { color: #ff007f; text-shadow: 0 0 4px #ff007f; }
+.c-yellow { color: #ffe600; }
+.c-blue { color: #00a2ff; }
+.c-green { color: #00ff66; }
+.c-orange { color: #ff6600; }
+.c-purple { color: #b026ff; }
+.c-cyan { color: #00f0ff; }
 .c-gray { color: #a0aab5; }
-
-.divider {
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #00f0ff, transparent);
-  margin: 25px 0;
-}
 </style>
 </head>
 <body>
 
-<div class="main-container">
+<div class="dashboard-grid">
 
-  <!-- SECCIÓN 1 (Kanto) -->
-  <div class="section-header">Kanto</div>
-  <p><span class="c-starters">&#9733; Iniciales</span> / <span class="action-text">Espeon</span></p>
-  <p><span class="action-text">Teletransporte &gt; Enviar</span> <span class="highlight-pokemon">Honchkrow</span> <span class="move-text">Golpe Bajo</span></p>
-  <br>
-  <p><span class="c-yellow">&#9733; Pikachu</span></p>
-  <p><span class="move-text">Intercambio</span></p>
-  <p><span class="sub-header">&#9734; ¿Quién sigue?</span></p>
-  <p>&bull; <span class="highlight-pokemon">Espeon</span></p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight-pokemon">Honchkrow</span> <span class="move-text">Golpe Bajo</span></p>
-  <p>&bull; <span class="highlight-pokemon">Snorlax</span></p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight-pokemon">Blissey</span> <span class="action-text">Teletransporte/Sacrificio, seguir solución de Snorlax</span></p>
-  <br>
-  <p><span class="c-blue">&#9733; Snorlax</span></p>
-  <p><span class="action-text">Teletransporte &gt; Enviar</span> <span class="highlight-pokemon">Breloom</span> <span class="move-text">Demolición</span></p>
-  <p><span class="sub-header">&#9734; ¿Quién sigue?</span></p>
-  <p>&bull; <span class="highlight-pokemon">Charizard</span></p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="move-text">Ultra Puño</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Honchkrow</span> <span class="move-text">Golpe Bajo</span></p>
+  <!-- FRAGMENTO 1: KANTO -->
+  <div class="card">
+    <div class="card-title">Estrategia 01 - Kanto</div>
+    <div class="card-body">
+      <div class="section-header">Líder</div>
+      <p><span class="c-starters">&#9733; Iniciales</span> / <span class="action-text">Espeon</span></p>
+      <p><span class="action-text">Teletransporte &gt; Enviar</span> <span class="highlight-pokemon">Honchkrow</span> <span class="move-text">Golpe Bajo</span></p>
+      <br>
+      <p><span class="c-yellow">&#9733; Pikachu</span></p>
+      <p><span class="move-text">Intercambio</span></p>
+      <p><span class="sub-header">&#9734; ¿Quién sigue?</span></p>
+      <p>&bull; <span class="highlight-pokemon">Espeon</span></p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight-pokemon">Honchkrow</span> <span class="move-text">Golpe Bajo</span></p>
+      <p>&bull; <span class="highlight-pokemon">Snorlax</span></p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight-pokemon">Blissey</span> <span class="action-text">Teletransporte/Sacrificio, seguir solución de Snorlax</span></p>
+      <br>
+      <p><span class="c-blue">&#9733; Snorlax</span></p>
+      <p><span class="action-text">Teletransporte &gt; Enviar</span> <span class="highlight-pokemon">Breloom</span> <span class="move-text">Demolición</span></p>
+      <p><span class="sub-header">&#9734; ¿Quién sigue?</span></p>
+      <p>&bull; <span class="highlight-pokemon">Charizard</span></p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="move-text">Ultramano</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Honchkrow</span> <span class="move-text">Golpe Bajo</span></p>
 
-  <div class="divider"></div>
+      <div class="section-header">Segundo Pokémon (+1)</div>
+      <p><span class="c-blue">&#9733; Blastoise</span></p>
+      <p><span class="move-text">Golpe Bajo x2</span></p>
+      <br>
+      <p><span class="c-orange">&#9733; Charizard</span></p>
+      <p><span class="move-text">Protección + Golpe Bajo</span></p>
+      <br>
+      <p><span class="c-green">&#9733; Venusaur</span></p>
+      <p><span class="highlight-pokemon">Sin sol</span> -&gt; <span class="move-text">Pájaro Osado</span></p>
+      <p><span class="highlight-pokemon">Con sol</span> -&gt; <span class="move-text">Golpe Bajo x2</span></p>
 
-  <div class="section-header">Segundo Pokémon (+1)</div>
-  <p><span class="c-blue">&#9733; Blastoise</span></p>
-  <p><span class="move-text">Golpe Bajo x2</span></p>
-  <br>
-  <p><span class="c-orange">&#9733; Charizard</span></p>
-  <p><span class="move-text">Protección + Golpe Bajo</span></p>
-  <br>
-  <p><span class="c-green">&#9733; Venusaur</span></p>
-  <p><span class="highlight-pokemon">Sin sol</span> -&gt; <span class="move-text">Pájaro Osado</span></p>
-  <p><span class="highlight-pokemon">Con sol</span> -&gt; <span class="move-text">Golpe Bajo x2</span></p>
+      <div class="section-header">El resto (+2)</div>
+      <p>&#9733; <span class="move-text">Golpe Bajo</span> al resto, excepto Snorlax</p>
+      <p>&#9733; <span class="move-text">Fuerza Bruta</span> a Snorlax</p>
+    </div>
+  </div>
 
-  <div class="divider"></div>
+  <!-- FRAGMENTO 2: JOHTO -->
+  <div class="card">
+    <div class="card-title">Estrategia 02 - Johto</div>
+    <div class="card-body">
+      <div class="section-header">Inicio</div>
+      <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Golduck</span> <span class="move-text">Otra Vez</span></p>
+      <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Gliscor</span> <span class="move-text">2 Danza Espada + Pulimento</span></p>
+      
+      <div class="section-header">Qué usar</div>
+      <p><span class="move-text">Acróbata</span> en:</p>
+      <ul>
+        <li><span class="c-purple">Gliscor</span></li>
+        <li><span class="c-blue">Feraligatr</span></li>
+        <li><span class="c-green">Meganium</span></li>
+      </ul>
+      <br>
+      <p><span class="move-text">Terremoto</span> en:</p>
+      <ul>
+        <li><span class="c-orange">Typhlosion</span></li>
+        <li><span class="c-yellow">Pikachu</span></li>
+        <li><span class="c-gray">Tyranitar</span></li>
+      </ul>
+    </div>
+  </div>
 
-  <div class="section-header">El resto (+2)</div>
-  <p>&#9733; <span class="move-text">Golpe Bajo</span> al resto, excepto Snorlax</p>
-  <p>&#9733; <span class="move-text">Fuerza Bruta</span> a Snorlax</p>
+  <!-- FRAGMENTO 3: HOENN -->
+  <div class="card">
+    <div class="card-title">Estrategia 03 - Hoenn</div>
+    <div class="card-body">
+      <div class="section-header">Inicio</div>
+      <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Golduck</span> <span class="move-text">Otra Vez</span></p>
+      <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Gliscor</span> <span class="move-text">Danza Espada + Pulimento</span></p>
+      
+      <div class="section-header">Qué usar</div>
+      <p><span class="move-text">Acróbata</span> en:</p>
+      <ul>
+        <li><span class="c-blue">Swampert</span></li>
+        <li><span class="c-orange">Blaziken</span></li>
+        <li><span class="c-cyan">Salamence</span></li>
+        <li><span class="c-green">Sceptile</span></li>
+      </ul>
+      <br>
+      <p><span class="move-text">Terremoto</span> en:</p>
+      <ul>
+        <li><span class="c-cyan">Metagross</span></li>
+        <li><span class="c-yellow">Pikachu</span></li>
+      </ul>
+    </div>
+  </div>
 
-  <div class="divider"></div>
+  <!-- FRAGMENTO 4: SINNOH -->
+  <div class="card">
+    <div class="card-title">Estrategia 04 - Sinnoh</div>
+    <div class="card-body">
+      <div class="section-header">Inicio</div>
+      <p class="sub-header">&#9734; ¿A quién enviaron?</p>
+      <p>&bull; <span class="highlight-pokemon">Golduck/Lapras</span></p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="action-text">Enviar</span> <span class="highlight-pokemon">Gliscor</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Breloom</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Blissey</span></p>
+      <p>&bull; <span class="highlight-pokemon">Gliscor/Honchkrow/Breloom</span></p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="action-text">Enviar</span> <span class="highlight-pokemon">Blissey</span></p>
+      <br>
+      <p class="sub-header">&#9734; Después de que muera Staraptor</p>
+      <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Lapras</span> <span class="move-text">2 Danza Dragón + Sustituto</span></p>
+      
+      <div class="section-header">Qué usar</div>
+      <p><span class="move-text">Chuzos</span> en:</p>
+      <ul>
+        <li><span class="c-orange">Infernape</span></li>
+        <li><span class="c-yellow">Pikachu</span></li>
+        <li><span class="c-green">Torterra</span></li>
+        <li><span class="c-cyan">Garchomp</span></li>
+      </ul>
+      <br>
+      <p><span class="move-text">Terremoto</span> en:</p>
+      <ul>
+        <li><span class="c-blue">Empoleon</span></li>
+      </ul>
+    </div>
+  </div>
 
-  <!-- SECCIÓN 2 (Johto) -->
-  <div class="section-header">Jotho</div>
-  <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Golduck</span> <span class="move-text">Otra Vez</span></p>
-  <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Gliscor</span> <span class="move-text">2 Danza Espada + Pulimento</span></p>
-  <br>
-  <div class="section-header">Qué usar</div>
-  <p><span class="move-text">Acróbata</span> en:</p>
-  <ul>
-    <li><span class="c-purple">Gliscor</span></li>
-    <li><span class="c-blue">Feraligatr</span></li>
-    <li><span class="c-green">Meganium</span></li>
-  </ul>
-  <br>
-  <p><span class="move-text">Terremoto</span> en:</p>
-  <ul>
-    <li><span class="c-orange">Typhlosion</span></li>
-    <li><span class="c-yellow">Pikachu</span></li>
-    <li><span class="c-gray">Tyranitar</span></li>
-  </ul>
-
-  <div class="divider"></div>
-
-  <!-- SECCIÓN 3 (Hoenn) -->
-  <div class="section-header">Hoenn</div>
-  <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Golduck</span> <span class="move-text">Otra Vez</span></p>
-  <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Gliscor</span> <span class="move-text">Danza Espada + Pulimento</span></p>
-  <br>
-  <div class="section-header">Qué usar</div>
-  <p><span class="move-text">Acróbata</span> en:</p>
-  <ul>
-    <li><span class="c-blue">Swampert</span></li>
-    <li><span class="c-orange">Blaziken</span></li>
-    <li><span class="c-cyan">Salamence</span></li>
-    <li><span class="c-green">Sceptile</span></li>
-  </ul>
-  <br>
-  <p><span class="move-text">Terremoto</span> en:</p>
-  <ul>
-    <li><span class="c-cyan">Metagross</span></li>
-    <li><span class="c-yellow">Pikachu</span></li>
-  </ul>
-
-  <div class="divider"></div>
-
-  <!-- SECCIÓN 4 (Sinnoh) -->
-  <div class="section-header">Sinnoh</div>
-  <p class="sub-header">&#9734; ¿A quién enviaron?</p>
-  <p>&bull; <span class="highlight-pokemon">Golduck/Lapras</span></p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="action-text">Enviar</span> <span class="highlight-pokemon">Gliscor</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Breloom</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Blissey</span></p>
-  <p>&bull; <span class="highlight-pokemon">Gliscor/Honchkrow/Breloom</span></p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="action-text">Enviar</span> <span class="highlight-pokemon">Blissey</span></p>
-  <br>
-  <p class="sub-header">&#9734; Después de que muera Staraptor</p>
-  <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Lapras</span> <span class="move-text">2 Danza Dragón + Sustituto</span></p>
-  <br>
-  <div class="section-header">Qué usar</div>
-  <p><span class="move-text">Carambano</span> en:</p>
-  <ul>
-    <li><span class="c-orange">Infernape</span></li>
-    <li><span class="c-yellow">Pikachu</span></li>
-    <li><span class="c-green">Torterra</span></li>
-    <li><span class="c-cyan">Garchomp</span></li>
-  </ul>
-  <br>
-  <p><span class="move-text">Terremoto</span> en:</p>
-  <ul>
-    <li><span class="c-blue">Empoleon</span></li>
-  </ul>
-
-  <div class="divider"></div>
-
-  <!-- SECCIÓN 5 (Unova/Teselia) -->
-  <div class="section-header">Teselia</div>
-  <p><span class="c-gray">&#9733; Excadrill</span></p>
-  <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Honchkrow</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Breloom</span> <span class="move-text">Ultramano</span>, <span class="action-text">seguir solución de Emboar</span></p>
-  <br>
-  <p><span class="c-yellow">&#9733; Pikachu</span></p>
-  <p><span class="move-text">Intercambio</span>, <span class="action-text">Teletransporte, seguir solución de Emboar</span></p>
-  <br>
-  <p><span class="c-cyan">&#9733; Hydreigon / Samurott / Serperior</span></p>
-  <p><span class="action-text">Teletransporte, seguir solución de Emboar</span></p>
-  <br>
-  <p><span class="c-orange">&#9733; Emboar</span></p>
-  <p class="sub-header">&#9734; ¿A quién enviaron?</p>
-  <p>&bull; <span class="highlight-pokemon">Golduck</span></p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="move-text">Bostezo + Doble Filo</span></p>
-  <p>&bull; <span class="highlight-pokemon">Lapras</span></p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="move-text">Danza Dragón</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Golduck</span> <span class="move-text">Bostezo + Doble Filo</span></p>
-  <p>&bull; <span class="highlight-pokemon">Cualquier otro</span></p>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="action-text">Enviar</span> <span class="highlight-pokemon">Lapras</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Golduck</span> <span class="move-text">+ Bostezo Doble Filo</span></p>
-  <br>
-  <p class="sub-header">&#9734; Después de que muera Golduck</p>
-  <p><span class="highlight-pokemon">Breloom</span> <span class="move-text">Danza Espada</span></p>
-  <br>
-  <div class="section-header">Qué usar</div>
-  <p><span class="move-text">Ultra Puño</span></p>
-  <ul>
-    <li><span class="c-orange">Emboar</span></li>
-    <li><span class="c-green">Serperior</span></li>
-    <li><span class="c-cyan">Hydreigon</span></li>
-    <li><span class="c-yellow">Pikachu</span></li>
-    <li><span class="c-gray">Excadrill</span></li>
-  </ul>
-  <br>
-  <p><span class="move-text">Demolición</span></p>
-  <ul>
-    <li><span class="c-blue">Samurott</span></li>
-  </ul>
+  <!-- FRAGMENTO 5: UNOVA / TESELIA -->
+  <div class="card" style="grid-column: span 2;">
+    <div class="card-title">Estrategia 05 - Unova / Teselia</div>
+    <div class="card-body">
+      <div class="section-header">Líder</div>
+      <p><span class="c-gray">&#9733; Excadrill:</span> <span class="action-text">Enviar</span> <span class="highlight-pokemon">Honchkrow</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Breloom</span> <span class="move-text">Ultramano</span>, <span class="action-text">seguir solución de Emboar</span></p>
+      <p><span class="c-yellow">&#9733; Pikachu:</span> <span class="move-text">Intercambio</span>, <span class="action-text">Teletransporte, seguir solución de Emboar</span></p>
+      <p><span class="c-cyan">&#9733; Hydreigon / Samurott / Serperior:</span> <span class="action-text">Teletransporte, seguir solución de Emboar</span></p>
+      <br>
+      <p><span class="c-orange">&#9733; Emboar</span></p>
+      <p class="sub-header">&#9734; ¿A quién enviaron?</p>
+      <p>&bull; <span class="highlight-pokemon">Golduck</span> -&gt; <span class="move-text">Bostezo + Doble Filo</span></p>
+      <p>&bull; <span class="highlight-pokemon">Lapras</span> -&gt; <span class="move-text">Danza Dragón</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Golduck</span> <span class="move-text">Bostezo + Doble Filo</span></p>
+      <p>&bull; <span class="highlight-pokemon">Cualquier otro</span> -&gt; <span class="action-text">Enviar</span> <span class="highlight-pokemon">Lapras</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Golduck</span> <span class="move-text">+ Bostezo Doble Filo</span></p>
+      <br>
+      <p class="sub-header">&#9734; Después de que muera Golduck</p>
+      <p><span class="highlight-pokemon">Breloom</span> <span class="move-text">Danza Espada</span></p>
+      
+      <div class="section-header">Qué usar</div>
+      <p><span class="move-text">Ultramano:</span> <span class="c-orange">Emboar</span>, <span class="c-green">Serperior</span>, <span class="c-cyan">Hydreigon</span>, <span class="c-yellow">Pikachu</span>, <span class="c-gray">Excadrill</span></p>
+      <p><span class="move-text">Demolición:</span> <span class="c-blue">Samurott</span></p>
+    </div>
+  </div>
 
 </div>
 
