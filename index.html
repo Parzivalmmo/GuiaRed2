@@ -1,481 +1,279 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía de Estrategia Cyberpunk</title>
 <style type="text/css">
-@import url(https://themes.googleusercontent.com/fonts/css?kit=PY67SA034LCAl0I08h9ecJ0WG2Mzi3oK5bKQN88auvE);
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap');
 
-/* Estilos combinados sin omitir ninguna regla */
-.lst-kix_8wjvo3uluefb-1>li:before{content:"\0025cb   "}
-.lst-kix_8wjvo3uluefb-0>li:before{content:"\0025cf   "}
-.lst-kix_8wjvo3uluefb-2>li:before{content:"\0025a0   "}
-.lst-kix_8wjvo3uluefb-5>li:before{content:"\0025a0   "}
-.lst-kix_8wjvo3uluefb-4>li:before{content:"\0025cb   "}
-.lst-kix_8wjvo3uluefb-6>li:before{content:"\0025cf   "}
-.lst-kix_8wjvo3uluefb-3>li:before{content:"\0025cf   "}
-.lst-kix_8wjvo3uluefb-7>li:before{content:"\0025cb   "}
-.lst-kix_8wjvo3uluefb-8>li:before{content:"\0025a0   "}
-.lst-kix_fq7lyr6vxpwb-2>li:before{content:"\0025a0   "}
-.lst-kix_fq7lyr6vxpwb-4>li:before{content:"\0025cb   "}
-.lst-kix_fq7lyr6vxpwb-1>li:before{content:"\0025cb   "}
-.lst-kix_fq7lyr6vxpwb-5>li:before{content:"\0025a0   "}
-.lst-kix_fq7lyr6vxpwb-0>li:before{content:"\002605   "}
-ul.lst-kix_fq7lyr6vxpwb-0{list-style-type:none}
-.lst-kix_fq7lyr6vxpwb-6>li:before{content:"\0025cf   "}
-.lst-kix_fq7lyr6vxpwb-8>li:before{content:"\0025a0   "}
-ul.lst-kix_fq7lyr6vxpwb-1{list-style-type:none}
-ul.lst-kix_fq7lyr6vxpwb-2{list-style-type:none}
-ul.lst-kix_fq7lyr6vxpwb-3{list-style-type:none}
-ul.lst-kix_fq7lyr6vxpwb-4{list-style-type:none}
-.lst-kix_fq7lyr6vxpwb-7>li:before{content:"\0025cb   "}
-.lst-kix_fq7lyr6vxpwb-3>li:before{content:"\0025cf   "}
-ul.lst-kix_8wjvo3uluefb-0{list-style-type:none}
-.lst-kix_kacrx6op26go-0>li:before{content:"\002605   "}
-ul.lst-kix_8wjvo3uluefb-1{list-style-type:none}
-ul.lst-kix_8wjvo3uluefb-2{list-style-type:none}
-ul.lst-kix_8wjvo3uluefb-3{list-style-type:none}
-ul.lst-kix_8wjvo3uluefb-4{list-style-type:none}
-.lst-kix_kacrx6op26go-1>li:before{content:"\0025cb   "}
-.lst-kix_kacrx6op26go-2>li:before{content:"\0025a0   "}
-ul.lst-kix_8wjvo3uluefb-5{list-style-type:none}
-ul.lst-kix_8wjvo3uluefb-6{list-style-type:none}
-ul.lst-kix_8wjvo3uluefb-7{list-style-type:none}
-ul.lst-kix_kacrx6op26go-1{list-style-type:none}
-ul.lst-kix_8wjvo3uluefb-8{list-style-type:none}
-ul.lst-kix_kacrx6op26go-2{list-style-type:none}
-.lst-kix_kacrx6op26go-3>li:before{content:"\0025cf   "}
-.lst-kix_kacrx6op26go-4>li:before{content:"\0025cb   "}
-ul.lst-kix_kacrx6op26go-3{list-style-type:none}
-ul.lst-kix_kacrx6op26go-4{list-style-type:none}
-ul.lst-kix_kacrx6op26go-5{list-style-type:none}
-ul.lst-kix_kacrx6op26go-6{list-style-type:none}
-ul.lst-kix_kacrx6op26go-7{list-style-type:none}
-ul.lst-kix_kacrx6op26go-8{list-style-type:none}
-ul.lst-kix_fq7lyr6vxpwb-5{list-style-type:none}
-ul.lst-kix_fq7lyr6vxpwb-6{list-style-type:none}
-.lst-kix_kacrx6op26go-7>li:before{content:"\0025cb   "}
-.lst-kix_kacrx6op26go-8>li:before{content:"\0025a0   "}
-ul.lst-kix_fq7lyr6vxpwb-7{list-style-type:none}
-ul.lst-kix_fq7lyr6vxpwb-8{list-style-type:none}
-.lst-kix_kacrx6op26go-5>li:before{content:"\0025a0   "}
-.lst-kix_kacrx6op26go-6>li:before{content:"\0025cf   "}
-ul.lst-kix_kacrx6op26go-0{list-style-type:none}
-.lst-kix_go2pghz5ufum-8>li:before{content:"\0025a0   "}
-.lst-kix_go2pghz5ufum-4>li:before{content:"\0025cb   "}
-ul.lst-kix_go2pghz5ufum-8{list-style-type:none}
-ul.lst-kix_go2pghz5ufum-7{list-style-type:none}
-ul.lst-kix_go2pghz5ufum-6{list-style-type:none}
-.lst-kix_go2pghz5ufum-2>li:before{content:"\0025a0   "}
-.lst-kix_go2pghz5ufum-3>li:before{content:"\0025cf   "}
-li.li-bullet-0:before{margin-left:-18pt;white-space:nowrap;display:inline-block;min-width:18pt}
-ul.lst-kix_go2pghz5ufum-1{list-style-type:none}
-.lst-kix_go2pghz5ufum-0>li:before{content:"\002605   "}
-ul.lst-kix_go2pghz5ufum-0{list-style-type:none}
-.lst-kix_go2pghz5ufum-1>li:before{content:"\0025cb   "}
-ul.lst-kix_go2pghz5ufum-5{list-style-type:none}
-ul.lst-kix_go2pghz5ufum-4{list-style-type:none}
-ul.lst-kix_go2pghz5ufum-3{list-style-type:none}
-ul.lst-kix_go2pghz5ufum-2{list-style-type:none}
-.lst-kix_go2pghz5ufum-5>li:before{content:"\0025a0   "}
-.lst-kix_go2pghz5ufum-6>li:before{content:"\0025cf   "}
-.lst-kix_go2pghz5ufum-7>li:before{content:"\0025cb   "}
-.lst-kix_x6iv33t0ljbs-6>li:before{content:"\0025cf   "}
-.lst-kix_x6iv33t0ljbs-5>li:before{content:"\0025a0   "}
-.lst-kix_x6iv33t0ljbs-7>li:before{content:"\0025cb   "}
-.lst-kix_x6iv33t0ljbs-2>li:before{content:"\0025a0   "}
-.lst-kix_x6iv33t0ljbs-3>li:before{content:"\0025cf   "}
-.lst-kix_x6iv33t0ljbs-4>li:before{content:"\0025cb   "}
-ul.lst-kix_x6iv33t0ljbs-2{list-style-type:none}
-ul.lst-kix_x6iv33t0ljbs-1{list-style-type:none}
-ul.lst-kix_x6iv33t0ljbs-0{list-style-type:none}
-.lst-kix_x6iv33t0ljbs-1>li:before{content:"\0025cb   "}
-ul.lst-kix_x6iv33t0ljbs-8{list-style-type:none}
-ul.lst-kix_x6iv33t0ljbs-7{list-style-type:none}
-.lst-kix_x6iv33t0ljbs-0>li:before{content:"\002605   "}
-ul.lst-kix_x6iv33t0ljbs-6{list-style-type:none}
-.lst-kix_x6iv33t0ljbs-8>li:before{content:"\0025a0   "}
-ul.lst-kix_x6iv33t0ljbs-5{list-style-type:none}
-ul.lst-kix_x6iv33t0ljbs-4{list-style-type:none}
-ul.lst-kix_x6iv33t0ljbs-3{list-style-type:none}
-.lst-kix_3mp5lc72v9t2-0>li:before{content:"\002605   "}
-.lst-kix_3mp5lc72v9t2-2>li:before{content:"\0025a0   "}
-.lst-kix_3mp5lc72v9t2-1>li:before{content:"\0025cb   "}
-ul.lst-kix_3mp5lc72v9t2-7{list-style-type:none}
-ul.lst-kix_3mp5lc72v9t2-8{list-style-type:none}
-ul.lst-kix_3mp5lc72v9t2-1{list-style-type:none}
-ul.lst-kix_3mp5lc72v9t2-2{list-style-type:none}
-.lst-kix_3mp5lc72v9t2-5>li:before{content:"\0025a0   "}
-ul.lst-kix_3mp5lc72v9t2-0{list-style-type:none}
-.lst-kix_vt1fy4lfzoal-7>li:before{content:"\0025cb   "}
-ul.lst-kix_3mp5lc72v9t2-5{list-style-type:none}
-.lst-kix_3mp5lc72v9t2-3>li:before{content:"\0025cf   "}
-.lst-kix_3mp5lc72v9t2-4>li:before{content:"\0025cb   "}
-ul.lst-kix_3mp5lc72v9t2-6{list-style-type:none}
-ul.lst-kix_3mp5lc72v9t2-3{list-style-type:none}
-ul.lst-kix_3mp5lc72v9t2-4{list-style-type:none}
-.lst-kix_vt1fy4lfzoal-6>li:before{content:"\0025cf   "}
-ul.lst-kix_vt1fy4lfzoal-3{list-style-type:none}
-ul.lst-kix_vt1fy4lfzoal-4{list-style-type:none}
-ul.lst-kix_vt1fy4lfzoal-1{list-style-type:none}
-ul.lst-kix_vt1fy4lfzoal-2{list-style-type:none}
-.lst-kix_vt1fy4lfzoal-3>li:before{content:"\0025cf   "}
-.lst-kix_vt1fy4lfzoal-5>li:before{content:"\0025a0   "}
-ul.lst-kix_vt1fy4lfzoal-7{list-style-type:none}
-ul.lst-kix_vt1fy4lfzoal-8{list-style-type:none}
-ul.lst-kix_vt1fy4lfzoal-5{list-style-type:none}
-.lst-kix_vt1fy4lfzoal-4>li:before{content:"\0025cb   "}
-ul.lst-kix_vt1fy4lfzoal-6{list-style-type:none}
-.lst-kix_vt1fy4lfzoal-8>li:before{content:"\0025a0   "}
-.lst-kix_3mp5lc72v9t2-6>li:before{content:"\0025cf   "}
-.lst-kix_vt1fy4lfzoal-1>li:before{content:"\0025cb   "}
-.lst-kix_3mp5lc72v9t2-7>li:before{content:"\0025cb   "}
-.lst-kix_3mp5lc72v9t2-8>li:before{content:"\0025a0   "}
-ul.lst-kix_vt1fy4lfzoal-0{list-style-type:none}
-.lst-kix_vt1fy4lfzoal-2>li:before{content:"\0025a0   "}
-.lst-kix_vt1fy4lfzoal-0>li:before{content:"\002605   "}
-ul.lst-kix_8mq0w9gha7ul-8{list-style-type:none}
-ul.lst-kix_8mq0w9gha7ul-7{list-style-type:none}
-ul.lst-kix_8mq0w9gha7ul-6{list-style-type:none}
-ul.lst-kix_8mq0w9gha7ul-5{list-style-type:none}
-ul.lst-kix_8mq0w9gha7ul-4{list-style-type:none}
-ul.lst-kix_8mq0w9gha7ul-3{list-style-type:none}
-ul.lst-kix_8mq0w9gha7ul-2{list-style-type:none}
-ul.lst-kix_8mq0w9gha7ul-1{list-style-type:none}
-ul.lst-kix_8mq0w9gha7ul-0{list-style-type:none}
-.lst-kix_8mq0w9gha7ul-7>li:before{content:"\0025cb   "}
-.lst-kix_8mq0w9gha7ul-8>li:before{content:"\0025a0   "}
-.lst-kix_17why699ya5e-4>li:before{content:"\0025cb   "}
-.lst-kix_5xdpcjwupwaj-0>li:before{content:"\002605   "}
-.lst-kix_8mq0w9gha7ul-5>li:before{content:"\0025a0   "}
-.lst-kix_17why699ya5e-5>li:before{content:"\0025a0   "}
-.lst-kix_17why699ya5e-6>li:before{content:"\0025cf   "}
-.lst-kix_8mq0w9gha7ul-6>li:before{content:"\0025cf   "}
-.lst-kix_17why699ya5e-7>li:before{content:"\0025cb   "}
-.lst-kix_17why699ya5e-8>li:before{content:"\0025a0   "}
-.lst-kix_8mq0w9gha7ul-1>li:before{content:"\0025cb   "}
-.lst-kix_8mq0w9gha7ul-0>li:before{content:"\002605   "}
-.lst-kix_8mq0w9gha7ul-4>li:before{content:"\0025cb   "}
-.lst-kix_8mq0w9gha7ul-3>li:before{content:"\0025cf   "}
-.lst-kix_8mq0w9gha7ul-2>li:before{content:"\0025a0   "}
-ul.lst-kix_5xdpcjwupwaj-0{list-style-type:none}
-ul.lst-kix_5xdpcjwupwaj-4{list-style-type:none}
-ul.lst-kix_5xdpcjwupwaj-3{list-style-type:none}
-ul.lst-kix_5xdpcjwupwaj-2{list-style-type:none}
-ul.lst-kix_5xdpcjwupwaj-1{list-style-type:none}
-ul.lst-kix_5xdpcjwupwaj-8{list-style-type:none}
-.lst-kix_5xdpcjwupwaj-7>li:before{content:"\0025cb   "}
-ul.lst-kix_5xdpcjwupwaj-7{list-style-type:none}
-.lst-kix_5xdpcjwupwaj-8>li:before{content:"\0025a0   "}
-ul.lst-kix_5xdpcjwupwaj-6{list-style-type:none}
-ul.lst-kix_5xdpcjwupwaj-5{list-style-type:none}
-ul.lst-kix_t9jxyabl89qj-0{list-style-type:none}
-.lst-kix_t9jxyabl89qj-5>li:before{content:"\0025a0   "}
-ul.lst-kix_t9jxyabl89qj-1{list-style-type:none}
-.lst-kix_5xdpcjwupwaj-3>li:before{content:"\0025cf   "}
-.lst-kix_5xdpcjwupwaj-4>li:before{content:"\0025cb   "}
-.lst-kix_t9jxyabl89qj-4>li:before{content:"\0025cb   "}
-.lst-kix_t9jxyabl89qj-6>li:before{content:"\0025cf   "}
-.lst-kix_5xdpcjwupwaj-1>li:before{content:"\0025cb   "}
-.lst-kix_5xdpcjwupwaj-2>li:before{content:"\0025a0   "}
-.lst-kix_5xdpcjwupwaj-5>li:before{content:"\0025a0   "}
-.lst-kix_5xdpcjwupwaj-6>li:before{content:"\0025cf   "}
-.lst-kix_17why699ya5e-3>li:before{content:"\0025cf   "}
-.lst-kix_t9jxyabl89qj-8>li:before{content:"\0025a0   "}
-.lst-kix_t9jxyabl89qj-7>li:before{content:"\0025cb   "}
-.lst-kix_17why699ya5e-1>li:before{content:"\0025cb   "}
-.lst-kix_17why699ya5e-2>li:before{content:"\0025a0   "}
-ul.lst-kix_17why699ya5e-2{list-style-type:none}
-.lst-kix_17why699ya5e-0>li:before{content:"\0025cf   "}
-ul.lst-kix_17why699ya5e-1{list-style-type:none}
-ul.lst-kix_17why699ya5e-4{list-style-type:none}
-ul.lst-kix_17why699ya5e-3{list-style-type:none}
-ul.lst-kix_17why699ya5e-0{list-style-type:none}
-.lst-kix_t9jxyabl89qj-1>li:before{content:"\0025cb   "}
-ul.lst-kix_t9jxyabl89qj-8{list-style-type:none}
-.lst-kix_t9jxyabl89qj-2>li:before{content:"\0025a0   "}
-ul.lst-kix_t9jxyabl89qj-6{list-style-type:none}
-ul.lst-kix_t9jxyabl89qj-7{list-style-type:none}
-.lst-kix_t9jxyabl89qj-3>li:before{content:"\0025cf   "}
-ul.lst-kix_t9jxyabl89qj-4{list-style-type:none}
-ul.lst-kix_t9jxyabl89qj-5{list-style-type:none}
-ul.lst-kix_t9jxyabl89qj-2{list-style-type:none}
-ul.lst-kix_t9jxyabl89qj-3{list-style-type:none}
-.lst-kix_t9jxyabl89qj-0>li:before{content:"\002605   "}
-ul.lst-kix_17why699ya5e-6{list-style-type:none}
-ul.lst-kix_17why699ya5e-5{list-style-type:none}
-ul.lst-kix_17why699ya5e-8{list-style-type:none}
-ul.lst-kix_17why699ya5e-7{list-style-type:none}
+/* Estilos Globales Futuristas */
+body {
+  background-color: #05050d;
+  color: #e0e6ed;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
 
-ol{margin:0;padding:0}
-table td,table th{padding:0}
+.main-container {
+  max-width: 800px;
+  width: 100%;
+  background: rgba(10, 12, 24, 0.95);
+  border: 1px solid #00f0ff;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2), inset 0 0 15px rgba(0, 240, 255, 0.1);
+  border-radius: 8px;
+  padding: 40px;
+  box-sizing: border-box;
+}
 
-.c0{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}
-.c1{font-size:14pt;font-family:"Lexend";color:#ffffff;font-weight:400}
-.c2{font-size:5pt;font-family:"Lexend";color:#ffffff;font-weight:400}
-.c3{-webkit-text-decoration-skip:none;color:#4a86e8;font-weight:700;text-decoration:underline;vertical-align:baseline;text-decoration-skip-ink:none;font-size:16pt;font-family:"Lexend";font-style:normal}
-.c4{height:11pt}
-.c5{-webkit-text-decoration-skip:none;color:#ff00ff;font-weight:700;text-decoration:underline;text-decoration-skip-ink:none;font-size:16pt;font-family:"Lexend"}
-.c6{-webkit-text-decoration-skip:none;color:#ff00ff;font-weight:400;text-decoration:underline;vertical-align:baseline;text-decoration-skip-ink:none;font-size:16pt;font-family:"Lexend";font-style:normal}
-.c7{-webkit-text-decoration-skip:none;text-decoration:underline;text-decoration-skip-ink:none}
-.c8{font-size:14pt;font-family:"Lexend";color:#ffffff;font-weight:700}
-.c9{color:#ffffff;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:10pt;font-family:"Lexend";font-style:normal}
-.c10{color:#ffffff;font-weight:700;vertical-align:baseline;font-size:16pt;font-family:"Lexend";font-style:normal}
-.c11{font-size:16pt;font-family:"Lexend";color:#00ff00;font-weight:700}
-.c12{vertical-align:baseline;font-style:normal}
-.c13{color:#ffffff;font-weight:400;text-decoration:none;font-size:16pt;font-family:"Lexend"}
-.c14{color:#9900ff;font-weight:700;font-size:16pt;font-family:"Lexend"}
-.c15{font-size:16pt;font-family:"Lexend";color:#4a86e8;font-weight:700}
-.c16{color:#9900ff;font-weight:700;text-decoration:none;font-size:14pt;font-family:"Lexend"}
-.c17{text-decoration:none}
-.c18{color:#ff9900;font-weight:700;font-size:16pt;font-family:"Lexend"}
-.c19{color:#ffffff;font-weight:400;font-size:16pt;font-family:"Lexend"}
-.c20{-webkit-text-decoration-skip:none;color:#ff0000;font-weight:700;text-decoration:underline;vertical-align:baseline;text-decoration-skip-ink:none;font-size:20pt;font-family:"Lexend";font-style:normal}
-.c21{font-size:16pt;font-family:"Lexend";color:#ffff00;font-weight:700}
-.c22{background-color:#1a1a1a;max-width:468pt;padding:72pt 72pt 72pt 72pt}
-.c23{font-size:16pt;font-family:"Lexend";color:#ffffff;font-weight:700}
+/* Tipografía e Títulos Futuristas */
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
-.s3_c1{-webkit-text-decoration-skip:none;color:#ff0000;font-weight:700;text-decoration:underline;vertical-align:baseline;text-decoration-skip-ink:none;font-size:20pt;font-family:"Lexend";font-style:normal}
-.s3_c2{color:#ff9900;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Lexend";font-style:normal}
-.s3_c3{color:#cccccc;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Lexend";font-style:normal}
-.s3_c4{font-size:14pt;font-family:"Lexend";color:#ffffff;font-weight:400}
-.s3_c5{margin-left:36pt;padding-left:0pt}
-.s3_c6{padding:0;margin:0}
-.s3_c7{font-size:14pt;font-family:"Lexend";color:#ffffff;font-weight:700}
-.s3_c8{text-decoration:none;vertical-align:baseline;font-style:normal}
-.s3_c9{color:#9900ff;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s3_c10{color:#4a86e8;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s3_c11{color:#ffffff;font-weight:400;font-size:16pt;font-family:"Lexend"}
-.s3_c12{height:11pt}
-.s3_c14{color:#ffff00;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s3_c15{color:#00ff00;font-weight:400;font-size:14pt;font-family:"Lexend"}
+.section-header {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: #ff0055;
+  text-decoration: underline;
+  text-shadow: 0 0 8px rgba(255, 0, 85, 0.6);
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 0, 85, 0.3);
+  padding-bottom: 5px;
+}
 
-.s4_c1{color:#ffffff;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:16pt;font-family:"Lexend";font-style:normal}
-.s4_c2{margin-left:36pt;padding-left:0pt}
-.s4_c3{height:11pt}
-.s4_c4{color:#ffff00;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Lexend";font-style:normal}
-.s4_c6{color:#9fc5e8;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Lexend";font-style:normal}
-.s4_c7{-webkit-text-decoration-skip:none;color:#ff0000;font-weight:700;text-decoration:underline;vertical-align:baseline;text-decoration-skip-ink:none;font-size:20pt;font-family:"Lexend";font-style:normal}
-.s4_c8{font-size:14pt;font-family:"Lexend";color:#ffffff;font-weight:400}
-.s4_c9{color:#ff9900;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Lexend";font-style:normal}
-.s4_c10{text-decoration:none;vertical-align:baseline;font-style:normal}
-.s4_c11{color:#4a86e8;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s4_c12{margin-left:72pt}
-.s4_c13{color:#000000;font-weight:400;font-size:11pt;font-family:"Lexend"}
-.s4_c14{color:#00ff00;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s4_c15{font-size:14pt;font-family:"Lexend";color:#ffffff;font-weight:700}
-.s4_c16{padding:0;margin:0}
-.s4_c17{color:#00ffff;font-weight:400;font-size:14pt;font-family:"Lexend"}
+.sub-header {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #bf00ff;
+  text-shadow: 0 0 6px rgba(191, 0, 255, 0.5);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
 
-.s5_c1{color:#ffffff;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Lexend";font-style:normal}
-.s5_c2{font-size:14pt;font-family:"Lexend";color:#ffffff;font-weight:700}
-.s5_c3{margin-left:36pt;padding-left:0pt}
-.s5_c4{font-size:14pt;font-family:"Lexend";color:#ffffff;font-weight:400}
-.s5_c5{height:11pt}
-.s5_c6{margin-left:72pt}
-.s5_c7{text-decoration:none;vertical-align:baseline;font-style:normal}
-.s5_c8{-webkit-text-decoration-skip:none;text-decoration:underline;text-decoration-skip-ink:none}
-.s5_c9{padding:0;margin:0}
-.s5_c10{color:#4a86e8;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s5_c11{color:#ffff00;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s5_c12{color:#00ffff;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s5_c13{color:#ffffff;font-weight:400;font-size:16pt;font-family:"Lexend"}
-.s5_c15{color:#ff9900;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s5_c16{color:#ff0000;font-weight:700;vertical-align:baseline;font-size:20pt;font-family:"Lexend";font-style:normal}
-.s5_c17{color:#9900ff;font-weight:700;font-size:14pt;font-family:"Lexend"}
-.s5_c18{color:#00ff00;font-weight:400;font-size:14pt;font-family:"Lexend"}
+/* Estilos de Texto */
+p {
+  margin: 6px 0;
+  line-height: 1.4;
+  font-size: 17px;
+}
 
-.s6_c0{font-size:20pt;font-family:"Lexend";color:#ff0000;font-weight:700}
-.s6_c1{font-size:16pt;font-family:"Lexend";color:#ff9900;font-weight:400}
-.s6_c2{text-decoration:none;vertical-align:baseline;font-style:normal}
-.s6_c3{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}
-.s6_c4{margin-left:36pt;padding-left:0pt}
-.s6_c5{color:#9900ff;font-weight:700;font-size:14pt;font-family:"Lexend"}
-.s6_c6{color:#ffffff;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s6_c7{-webkit-text-decoration-skip:none;text-decoration:underline;vertical-align:baseline;text-decoration-skip-ink:none;font-style:normal}
-.s6_c8{height:11pt}
-.s6_c10{padding-top:0pt;padding-bottom:0pt;line-height:1.0;orphans:2;widows:2;text-align:left}
-.s6_c11{font-size:16pt;font-family:"Lexend";color:#00ffff;font-weight:700}
-.s6_c12{color:#ff9900;font-weight:700;font-size:16pt;font-family:"Lexend"}
-.s6_c13{font-size:14pt;font-family:"Lexend";color:#ffffff;font-weight:700}
-.s6_c14{color:#00ff00;font-weight:700;font-size:16pt;font-family:"Lexend"}
-.s6_c16{color:#0000ff;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s6_c17{color:#ff9900;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s6_c18{color:#ffff00;font-weight:700;font-size:16pt;font-family:"Lexend"}
-.s6_c19{-webkit-text-decoration-skip:none;text-decoration:underline;text-decoration-skip-ink:none}
-.s6_c20{color:#b7b7b7;font-weight:700;font-size:16pt;font-family:"Lexend"}
-.s6_c21{color:#b7b7b7;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s6_c22{padding:0;margin:0}
-.s6_c23{color:#ffffff;font-weight:400;font-size:6pt;font-family:"Lexend"}
-.s6_c24{font-size:16pt;font-family:"Lexend";color:#b7b7b7;font-weight:400}
-.s6_c25{color:#0000ff;font-weight:700;font-size:16pt;font-family:"Lexend"}
-.s6_c26{font-size:16pt;font-family:"Lexend";color:#ffff00;font-weight:400}
-.s6_c27{color:#00ff00;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s6_c28{color:#000000;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s6_c29{margin-left:72pt}
-.s6_c30{font-size:5pt;font-family:"Lexend";color:#ffffff;font-weight:400}
-.s6_c31{color:#00ffff;font-weight:400;font-size:14pt;font-family:"Lexend"}
-.s6_c32{color:#ffff00;font-weight:400;font-size:14pt;font-family:"Lexend"}
+.highlight-pokemon {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
 
-.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
-.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
-li{color:#000000;font-size:11pt;font-family:"Arial"}
-p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}
-h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
-h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
-h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
-h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
-h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
-h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}
+.action-text {
+  color: #00f0ff;
+}
+
+.move-text {
+  color: #ffb700;
+  font-weight: 600;
+}
+
+/* Listas e Indicadores Neón */
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+li {
+  position: relative;
+  margin-bottom: 6px;
+  font-size: 17px;
+}
+
+li::before {
+  content: "➢";
+  position: absolute;
+  left: -18px;
+  color: #00f0ff;
+  text-shadow: 0 0 5px #00f0ff;
+}
+
+/* Colores Específicos por Tipo/Condición */
+.c-starters { color: #ff007f; text-shadow: 0 0 5px #ff007f; }
+.c-yellow { color: #ffe600; text-shadow: 0 0 5px #ffe600; }
+.c-blue { color: #00a2ff; text-shadow: 0 0 5px #00a2ff; }
+.c-green { color: #00ff66; text-shadow: 0 0 5px #00ff66; }
+.c-orange { color: #ff6600; text-shadow: 0 0 5px #ff6600; }
+.c-purple { color: #b026ff; text-shadow: 0 0 5px #b026ff; }
+.c-cyan { color: #00f0ff; text-shadow: 0 0 5px #00f0ff; }
+.c-gray { color: #a0aab5; }
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #00f0ff, transparent);
+  margin: 25px 0;
+}
 </style>
 </head>
-<body class="c22 doc-content">
+<body>
 
-<!-- SECCIÓN 1 (Source 2) -->
-<p class="c0"><span class="c7 c20">Lead</span><span class="c2">&nbsp;</span></p>
-<p class="c0"><span class="c14">&#9733; </span><span class="c7 c14">Starters</span><span class="c5">/Espeon</span></p>
-<p class="c0"><span class="c1">TP &gt; Send </span><span class="c8">Honchkrow</span><span class="c1 c12 c17">&nbsp;Sucker Punch</span></p>
-<p class="c0 c4"><span class="c9"></span></p>
-<p class="c0"><span class="c21">&#9733; </span><span class="c21 c7 c12">Pikachu</span></p>
-<p class="c0"><span class="c1 c12 c17">Skill Swap</span></p>
-<p class="c0"><span class="c12 c16">&#9734; Who next?</span></p>
-<p class="c0"><span class="c8">&bull; </span><span class="c1 c7">Espeon</span></p>
-<p class="c0"><span class="c8">&nbsp; &nbsp;Honchkrow</span><span class="c1 c12 c17">&nbsp;Sucker Punch</span></p>
-<p class="c0"><span class="c8">&bull; </span><span class="c1 c7">Snorlax</span></p>
-<p class="c0"><span class="c1">&nbsp; &nbsp;</span><span class="c8">Blissey</span><span class="c1">&nbsp;TP/Sac, follow Snorlax solve</span></p>
-<p class="c0 c4"><span class="c9"></span></p>
-<p class="c0"><span class="c23">&#9733; </span><span class="c7 c10">Snorlax</span></p>
-<p class="c0"><span class="c1">TP &gt; Send </span><span class="c8">Breloom</span><span class="c1 c12 c17">&nbsp;Brick Break</span></p>
-<p class="c0"><span class="c16 c12">&#9734; Who next?</span></p>
-<p class="c0"><span class="c8">&bull; </span><span class="c1 c7">Charizard</span></p>
-<p class="c0"><span class="c1">&nbsp; &nbsp;Mach Punch, send </span><span class="c8">Honchkrow</span><span class="c1 c12 c17">&nbsp;Sucker Punch</span></p>
-<p class="c0 c4"><span class="c12 c13"></span></p>
-<p class="c0 c4"><span class="c13 c12"></span></p>
-<p class="c0"><span class="c20 c7">Second mon (+1)</span><span class="c2">&nbsp;</span></p>
-<p class="c0"><span class="c15">&#9733; </span><span class="c3">Blastoise</span></p>
-<p class="c0"><span class="c1 c12 c17">Sucker Punch x2</span></p>
-<p class="c0 c4"><span class="c9"></span></p>
-<p class="c0"><span class="c18">&#9733; </span><span class="c7 c18">Charizard</span></p>
-<p class="c0"><span class="c1 c12 c17">Protect + Sucker Punch</span></p>
-<p class="c0 c4"><span class="c9"></span></p>
-<p class="c0"><span class="c11">&#9733; </span><span class="c11 c7">Venusaur</span></p>
-<p class="c0"><span class="c1 c7">No sun</span><span class="c1">&nbsp;-&gt; Brave Bird</span></p>
-<p class="c0"><span class="c1 c7">With sun</span><span class="c1">&nbsp;-&gt; Sucker Punch x2</span></p>
-<p class="c0 c4"><span class="c13 c12"></span></p>
-<p class="c0 c4"><span class="c13 c12"></span></p>
-<p class="c0"><span class="c20 c7">The rest (+2)</span></p>
-<p class="c0"><span class="c8">&#9733; Sucker Punch the rest, except Snorlax</span></p>
-<p class="c0"><span class="c8">&#9733; Superpower Snorlax</span></p>
+<div class="main-container">
 
-<!-- SECCIÓN 2 (Source 3) -->
-<p class="c0"><span class="s3_c1">Start</span></p>
-<p class="c0"><span class="s3_c4">Send </span><span class="s3_c7">Golduck</span><span class="s3_c4 s3_c8">&nbsp;Encore</span></p>
-<p class="c0"><span class="s3_c4">Send </span><span class="s3_c7">Gliscor</span><span class="s3_c4">&nbsp;2 Swords Dance + Rock Polish</span></p>
-<p class="c0 s3_c12"><span class="s3_c11 s3_c8"></span></p>
-<p class="c0"><span class="s3_c1">What to use</span></p>
-<p class="c0"><span class="s3_c4 s3_c8">Acrobatics on:</span></p>
-<ul class="s3_c6 lst-kix_go2pghz5ufum-0 start">
-  <li class="c0 s3_c5 li-bullet-0"><span class="s3_c8 s3_c9">Gliscor</span></li>
-  <li class="c0 s3_c5 li-bullet-0"><span class="s3_c8 s3_c10">Feraligatr</span></li>
-  <li class="c0 s3_c5 li-bullet-0"><span class="s3_c8 s3_c15">Meganium</span></li>
-</ul>
-<p class="c0 s3_c12"><span class="s3_c4 s3_c8"></span></p>
-<p class="c0"><span class="s3_c4 s3_c8">Earthquake on:</span></p>
-<ul class="s3_c6 lst-kix_go2pghz5ufum-0">
-  <li class="c0 s3_c5 li-bullet-0"><span class="s3_c2">Typhlosion</span></li>
-  <li class="c0 s3_c5 li-bullet-0"><span class="s3_c8 s3_c14">Pikachu</span></li>
-  <li class="c0 s3_c5 li-bullet-0"><span class="s3_c3">Tyranitar</span></li>
-</ul>
+  <!-- SECCIÓN 1 (Kanto) -->
+  <div class="section-header">Líder</div>
+  <p><span class="c-starters">&#9733; Iniciales</span> / <span class="action-text">Espeon</span></p>
+  <p><span class="action-text">Teletransporte &gt; Enviar</span> <span class="highlight-pokemon">Honchkrow</span> <span class="move-text">Golpe Bajo</span></p>
+  <br>
+  <p><span class="c-yellow">&#9733; Pikachu</span></p>
+  <p><span class="move-text">Intercambio</span></p>
+  <p><span class="sub-header">&#9734; ¿Quién sigue?</span></p>
+  <p>&bull; <span class="highlight-pokemon">Espeon</span></p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight-pokemon">Honchkrow</span> <span class="move-text">Golpe Bajo</span></p>
+  <p>&bull; <span class="highlight-pokemon">Snorlax</span></p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight-pokemon">Blissey</span> <span class="action-text">Teletransporte/Sacrificio, seguir solución de Snorlax</span></p>
+  <br>
+  <p><span class="c-blue">&#9733; Snorlax</span></p>
+  <p><span class="action-text">Teletransporte &gt; Enviar</span> <span class="highlight-pokemon">Breloom</span> <span class="move-text">Demolición</span></p>
+  <p><span class="sub-header">&#9734; ¿Quién sigue?</span></p>
+  <p>&bull; <span class="highlight-pokemon">Charizard</span></p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="move-text">Ultramano</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Honchkrow</span> <span class="move-text">Golpe Bajo</span></p>
 
-<!-- SECCIÓN 3 (Source 4) -->
-<p class="c0"><span class="s4_c7">Start</span></p>
-<p class="c0"><span class="s4_c8">Send </span><span class="s4_c15">Golduck</span><span class="s4_c8 s4_c10">&nbsp;Encore</span></p>
-<p class="c0"><span class="s4_c8">Send </span><span class="s4_c15">Gliscor</span><span class="s4_c8 s4_c10">&nbsp;Swords Dance + Rock Polish</span></p>
-<p class="c0 s4_c3"><span class="s4_c1"></span></p>
-<p class="c0"><span class="s4_c7">What to use</span></p>
-<p class="c0"><span class="s4_c8 s4_c10">Acrobatics on:</span></p>
-<ul class="s4_c16 lst-kix_x6iv33t0ljbs-0 start">
-  <li class="c0 s4_c2 li-bullet-0"><span class="s4_c10 s4_c11">Swampert</span></li>
-  <li class="c0 s4_c2 li-bullet-0"><span class="s4_c9">Blaziken</span></li>
-  <li class="c0 s4_c2 li-bullet-0"><span class="s4_c10 s4_c17">Salamence</span></li>
-  <li class="c0 s4_c2 li-bullet-0"><span class="s4_c10 s4_c14">Sceptile</span></li>
-</ul>
-<p class="c0 s4_c3"><span class="s4_c8 s4_c10"></span></p>
-<p class="c0"><span class="s4_c8 s4_c10">Earthquake on:</span></p>
-<ul class="s4_c16 lst-kix_x6iv33t0ljbs-0">
-  <li class="c0 s4_c2 li-bullet-0"><span class="s4_c6">Metagross</span></li>
-  <li class="c0 s4_c2 li-bullet-0"><span class="s4_c4">Pikachu</span></li>
-</ul>
-<p class="c0 s4_c3 s4_c12"><span class="s4_c1"></span></p>
-<p class="c0 s4_c3"><span class="s4_c10 s4_c13"></span></p>
+  <div class="divider"></div>
 
-<!-- SECCIÓN 4 (Source 5) -->
-<p class="c0"><span class="s5_c16 s5_c8">Start</span></p>
-<p class="c0"><span class="s5_c7 s5_c17">&#9734; Who got sent?</span></p>
-<p class="c0"><span class="s5_c4">&bull; </span><span class="s5_c4 s5_c8">Golduck/Lapras</span></p>
-<p class="c0"><span class="s5_c4">&nbsp; &nbsp;Send </span><span class="s5_c2">Gliscor</span><span class="s5_c4">, send </span><span class="s5_c2">Breloom</span><span class="s5_c4">, send </span><span class="s5_c2 s5_c7">Blissey</span></p>
-<p class="c0"><span class="s5_c4">&bull; </span><span class="s5_c4 s5_c8">Gliscor/Honchkrow/Breloom</span></p>
-<p class="c0"><span class="s5_c4">&nbsp; &nbsp;</span><span class="s5_c4">Send </span><span class="s5_c2">Blissey</span></p>
-<p class="c0 s5_c5"><span class="s5_c1"></span></p>
-<p class="c0"><span class="s5_c17 s5_c7">&#9734; After Staraptor died</span></p>
-<p class="c0"><span class="s5_c4">Send </span><span class="s5_c2">Lapras</span><span class="s5_c4">&nbsp;2 Dragon Dance + Substitute</span></p>
-<p class="c0 s5_c5"><span class="s5_c7 s5_c13"></span></p>
-<p class="c0"><span class="s5_c8 s5_c16">What to use</span></p>
-<p class="c0"><span class="s5_c1">Icicle Spear on:</span></p>
-<ul class="s5_c9 lst-kix_vt1fy4lfzoal-0 start">
-  <li class="c0 s5_c3 li-bullet-0"><span class="s5_c7 s5_c15">Infernape</span></li>
-  <li class="c0 s5_c3 li-bullet-0"><span class="s5_c11 s5_c7">Pikachu</span></li>
-  <li class="c0 s5_c3 li-bullet-0"><span class="s5_c7 s5_c18">Torterra</span></li>
-  <li class="c0 s5_c3 li-bullet-0"><span class="s5_c7 s5_c12">Garchomp</span></li>
-</ul>
-<p class="c0 s5_c5"><span class="s5_c1"></span></p>
-<p class="c0"><span class="s5_c1">Earthquake on:</span></p>
-<ul class="s5_c9 lst-kix_3mp5lc72v9t2-0 start">
-  <li class="c0 s5_c3 li-bullet-0"><span class="s5_c7 s5_c10">Empoleon</span></li>
-</ul>
-<p class="c0 s5_c5 s5_c6"><span class="s5_c13 s5_c7"></span></p>
+  <div class="section-header">Segundo Pokémon (+1)</div>
+  <p><span class="c-blue">&#9733; Blastoise</span></p>
+  <p><span class="move-text">Golpe Bajo x2</span></p>
+  <br>
+  <p><span class="c-orange">&#9733; Charizard</span></p>
+  <p><span class="move-text">Protección + Golpe Bajo</span></p>
+  <br>
+  <p><span class="c-green">&#9733; Venusaur</span></p>
+  <p><span class="highlight-pokemon">Sin sol</span> -&gt; <span class="move-text">Pájaro Osado</span></p>
+  <p><span class="highlight-pokemon">Con sol</span> -&gt; <span class="move-text">Golpe Bajo x2</span></p>
 
-<!-- SECCIÓN 5 (Source 6) -->
-<p class="s6_c3"><span class="s6_c0">Lead</span><span class="s6_c30">&nbsp;</span></p>
-<p class="s6_c3"><span class="s6_c24">&#9733; </span><span class="s6_c7 s6_c20">Excadrill</span></p>
-<p class="s6_c3"><span class="s6_c6">Send </span><span class="s6_c13">Honchkrow</span><span class="s6_c6">, send </span><span class="s6_c13">Breloom</span><span class="s6_c6">&nbsp;Mach Punch, follow Emboar solve</span></p>
-<p class="s6_c3 s6_c8"><span class="s6_c6 s6_c2"></span></p>
-<p class="s6_c3"><span class="s6_c26">&#9733; </span><span class="s6_c7 s6_c18">Pikachu</span></p>
-<p class="s6_c3"><span class="s6_c6">Skill Swap, TP, </span><span class="s6_c6">f</span><span class="s6_c6 s6_c2">ollow Emboar solve</span></p>
-<p class="s6_c3 s6_c8"><span class="s6_c6 s6_c2"></span></p>
-<p class="s6_c3"><span class="s6_c11">&#9733; </span><span class="s6_c11 s6_c19">Hydreigon</span><span class="s6_c11">&nbsp;</span><span class="s6_c19 s6_c25">Samurott</span><span class="s6_c25">&nbsp;</span><span class="s6_c7 s6_c14">Serperior</span></p>
-<p class="s6_c3"><span class="s6_c6">Teleport, </span><span class="s6_c6">f</span><span class="s6_c6 s6_c2">ollow Emboar solve</span></p>
-<p class="s6_c3 s6_c8"><span class="s6_c6 s6_c2"></span></p>
-<p class="s6_c3"><span class="s6_c1">&#9733; </span><span class="s6_c7 s6_c12">Emboar</span></p>
-<p class="s6_c3"><span class="s6_c5 s6_c2">&#9734; Who got sent?</span></p>
-<p class="s6_c3"><span class="s6_c6">&bull; </span><span class="s6_c6 s6_c19">Golduck</span></p>
-<p class="s6_c3"><span class="s6_c6 s6_c2">&nbsp; &nbsp;Yawn + Double Edge</span></p>
-<p class="s6_c10 s6_c8"><span class="s6_c23 s6_c2"></span></p>
-<p class="s6_c3"><span class="s6_c6">&bull; </span><span class="s6_c7 s6_c6">Lapras</span></p>
-<p class="s6_c3"><span class="s6_c6">&nbsp; &nbsp;Dragon Dance, send </span><span class="s6_c13">Golduck </span><span class="s6_c6 s6_c2">Yawn + Double Edge</span></p>
-<p class="s6_c8 s6_c10"><span class="s6_c2 s6_c23"></span></p>
-<p class="s6_c3"><span class="s6_c6">&bull; </span><span class="s6_c7 s6_c6">Any other</span></p>
-<p class="s6_c3"><span class="s6_c6">&nbsp; &nbsp;Send </span><span class="s6_c13">Lapras</span><span class="s6_c6">, send </span><span class="s6_c13">Golduck</span><span class="s6_c2 s6_c6">&nbsp;+ Yawn Double Edge</span></p>
-<p class="s6_c3 s6_c8"><span class="s6_c6 s6_c2"></span></p>
-<p class="s6_c3"><span class="s6_c2 s6_c5">&#9734; After Golduck died</span></p>
-<p class="s6_c3"><span class="s6_c13">Breloom</span><span class="s6_c6">&nbsp;Swords Dance</span></p>
-<p class="s6_c3 s6_c8"><span class="s6_c2 s6_c15"></span></p>
-<p class="s6_c3"><span class="s6_c7 s6_c0">What to use</span></p>
-<p class="s6_c3"><span class="s6_c6 s6_c2">Mach Punch</span></p>
-<ul class="s6_c22 lst-kix_t9jxyabl89qj-0 start">
-  <li class="s6_c3 s6_c4 li-bullet-0"><span class="s6_c2 s6_c17">Emboar</span></li>
-  <li class="s6_c3 s6_c4 li-bullet-0"><span class="s6_c2 s6_c27">Serperior</span></li>
-  <li class="s6_c3 s6_c4 li-bullet-0"><span class="s6_c2 s6_c31">Hydreigon</span></li>
-  <li class="s6_c3 s6_c4 li-bullet-0"><span class="s6_c2 s6_c32">Pikachu</span></li>
-  <li class="s6_c3 s6_c4 li-bullet-0"><span class="s6_c2 s6_c21">Excadrill</span></li>
-</ul>
-<p class="s6_c3 s6_c8"><span class="s6_c6 s6_c2"></span></p>
-<p class="s6_c3"><span class="s6_c6 s6_c2">Brick Break</span></p>
-<ul class="s6_c22 lst-kix_8mq0w9gha7ul-0 start">
-  <li class="s6_c3 s6_c4 li-bullet-0"><span class="s6_c2 s6_c16">Samurott</span></li>
-</ul>
-<p class="s6_c3 s6_c8 s6_c29"><span class="s6_c6 s6_c2"></span></p>
-<p class="s6_c3 s6_c8"><span class="s6_c28 s6_c2"></span></p>
-<p class="s6_c3 s6_c8"><span class="s6_c2 s6_c28"></span></p>
+  <div class="divider"></div>
+
+  <div class="section-header">El resto (+2)</div>
+  <p>&#9733; <span class="move-text">Golpe Bajo</span> al resto, excepto Snorlax</p>
+  <p>&#9733; <span class="move-text">Fuerza Bruta</span> a Snorlax</p>
+
+  <div class="divider"></div>
+
+  <!-- SECCIÓN 2 (Johto) -->
+  <div class="section-header">Inicio</div>
+  <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Golduck</span> <span class="move-text">Otra Vez</span></p>
+  <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Gliscor</span> <span class="move-text">2 Danza Espada + Pulimento</span></p>
+  <br>
+  <div class="section-header">Qué usar</div>
+  <p><span class="move-text">Acróbata</span> en:</p>
+  <ul>
+    <li><span class="c-purple">Gliscor</span></li>
+    <li><span class="c-blue">Feraligatr</span></li>
+    <li><span class="c-green">Meganium</span></li>
+  </ul>
+  <br>
+  <p><span class="move-text">Terremoto</span> en:</p>
+  <ul>
+    <li><span class="c-orange">Typhlosion</span></li>
+    <li><span class="c-yellow">Pikachu</span></li>
+    <li><span class="c-gray">Tyranitar</span></li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <!-- SECCIÓN 3 (Hoenn) -->
+  <div class="section-header">Inicio</div>
+  <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Golduck</span> <span class="move-text">Otra Vez</span></p>
+  <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Gliscor</span> <span class="move-text">Danza Espada + Pulimento</span></p>
+  <br>
+  <div class="section-header">Qué usar</div>
+  <p><span class="move-text">Acróbata</span> en:</p>
+  <ul>
+    <li><span class="c-blue">Swampert</span></li>
+    <li><span class="c-orange">Blaziken</span></li>
+    <li><span class="c-cyan">Salamence</span></li>
+    <li><span class="c-green">Sceptile</span></li>
+  </ul>
+  <br>
+  <p><span class="move-text">Terremoto</span> en:</p>
+  <ul>
+    <li><span class="c-cyan">Metagross</span></li>
+    <li><span class="c-yellow">Pikachu</span></li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <!-- SECCIÓN 4 (Sinnoh) -->
+  <div class="section-header">Inicio</div>
+  <p class="sub-header">&#9734; ¿A quién enviaron?</p>
+  <p>&bull; <span class="highlight-pokemon">Golduck/Lapras</span></p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="action-text">Enviar</span> <span class="highlight-pokemon">Gliscor</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Breloom</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Blissey</span></p>
+  <p>&bull; <span class="highlight-pokemon">Gliscor/Honchkrow/Breloom</span></p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="action-text">Enviar</span> <span class="highlight-pokemon">Blissey</span></p>
+  <br>
+  <p class="sub-header">&#9734; Después de que muera Staraptor</p>
+  <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Lapras</span> <span class="move-text">2 Danza Dragón + Sustituto</span></p>
+  <br>
+  <div class="section-header">Qué usar</div>
+  <p><span class="move-text">Chuzos</span> en:</p>
+  <ul>
+    <li><span class="c-orange">Infernape</span></li>
+    <li><span class="c-yellow">Pikachu</span></li>
+    <li><span class="c-green">Torterra</span></li>
+    <li><span class="c-cyan">Garchomp</span></li>
+  </ul>
+  <br>
+  <p><span class="move-text">Terremoto</span> en:</p>
+  <ul>
+    <li><span class="c-blue">Empoleon</span></li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <!-- SECCIÓN 5 (Unova/Teselia) -->
+  <div class="section-header">Líder</div>
+  <p><span class="c-gray">&#9733; Excadrill</span></p>
+  <p><span class="action-text">Enviar</span> <span class="highlight-pokemon">Honchkrow</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Breloom</span> <span class="move-text">Ultramano</span>, <span class="action-text">seguir solución de Emboar</span></p>
+  <br>
+  <p><span class="c-yellow">&#9733; Pikachu</span></p>
+  <p><span class="move-text">Intercambio</span>, <span class="action-text">Teletransporte, seguir solución de Emboar</span></p>
+  <br>
+  <p><span class="c-cyan">&#9733; Hydreigon / Samurott / Serperior</span></p>
+  <p><span class="action-text">Teletransporte, seguir solución de Emboar</span></p>
+  <br>
+  <p><span class="c-orange">&#9733; Emboar</span></p>
+  <p class="sub-header">&#9734; ¿A quién enviaron?</p>
+  <p>&bull; <span class="highlight-pokemon">Golduck</span></p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="move-text">Bostezo + Doble Filo</span></p>
+  <p>&bull; <span class="highlight-pokemon">Lapras</span></p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="move-text">Danza Dragón</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Golduck</span> <span class="move-text">Bostezo + Doble Filo</span></p>
+  <p>&bull; <span class="highlight-pokemon">Cualquier otro</span></p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="action-text">Enviar</span> <span class="highlight-pokemon">Lapras</span>, <span class="action-text">enviar</span> <span class="highlight-pokemon">Golduck</span> <span class="move-text">+ Bostezo Doble Filo</span></p>
+  <br>
+  <p class="sub-header">&#9734; Después de que muera Golduck</p>
+  <p><span class="highlight-pokemon">Breloom</span> <span class="move-text">Danza Espada</span></p>
+  <br>
+  <div class="section-header">Qué usar</div>
+  <p><span class="move-text">Ultramano</span></p>
+  <ul>
+    <li><span class="c-orange">Emboar</span></li>
+    <li><span class="c-green">Serperior</span></li>
+    <li><span class="c-cyan">Hydreigon</span></li>
+    <li><span class="c-yellow">Pikachu</span></li>
+    <li><span class="c-gray">Excadrill</span></li>
+  </ul>
+  <br>
+  <p><span class="move-text">Demolición</span></p>
+  <ul>
+    <li><span class="c-blue">Samurott</span></li>
+  </ul>
+
+</div>
 
 </body>
 </html>
